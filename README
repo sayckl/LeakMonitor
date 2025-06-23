@@ -1,0 +1,66 @@
+LeakMonitor
+LeakMonitor is a simple MVP web service that allows users to check if their email address has appeared in known data breaches using the Have I Been Pwned (HIBP) API.
+It also extracts and displays the domain part of the email for potential future domain-level monitoring.
+
+🚀 Features
+Check if an email has appeared in known breaches.
+
+Display a list of breaches with names and dates (if found).
+
+Extract and display the domain from the email.
+
+Frontend validation of email format.
+
+Loading spinner during checks.
+
+⚙ Tech Stack
+Node.js + Express
+
+Axios (API requests)
+
+Vanilla JS + HTML + CSS
+
+dotenv (secure API key management)
+
+🛠 Installation
+1️⃣ Clone the repository:
+git clone https://github.com/yourusername/leakmonitor.git
+cd leakmonitor
+
+2️⃣ Install dependencies:
+npm install
+
+3️⃣ Create a .env file in the root directory and fill it like this:
+HIBP_API_KEY=your_hibp_api_key
+PORT=3000
+
+4️⃣ Run the app:
+node server.js
+
+🌐 Usage
+Open http://localhost:3000
+
+Enter a valid email address
+
+View breach status and domain info
+
+📝 Notes
+Requires a valid HIBP API key (free or paid depending on usage level).
+
+MVP focuses on email checks; future versions may include domain-level and phone number checks.
+
+💡 Future Roadmap
+User registration and saved checks
+
+Email notifications for breach updates
+
+API for companies to monitor domains
+
+Localization (multi-language support)
+
+🛡 Disclaimer
+LeakMonitor does not store or share your email addresses or results.
+All checks are done in real-time via HIBP API.
+
+📄 License
+MIT
